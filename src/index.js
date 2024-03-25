@@ -4,20 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-import { storyblokInit, apiPlugin } from "@storyblok/react";
-import Home from './Pages/Home/Home';
-import Page from './Components/Page';
-storyblokInit({
-  accessToken: "H8ultMYF8J0d5K4KX8BQhAtt",
-  use: [apiPlugin],
 
-  components: {
-    page: Home
-  },
-  apiOptions: {
-    region: "us",
-  },
-});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(

@@ -8,9 +8,57 @@ body {
   margin: 0;
  padding: 0;
  box-sizing: border-box;
+ cursor: url('./assets/cur.png'), pointer !important;
   background-image: linear-gradient(to bottom, #f3f3ef, #f5f5e9, #f6f6e3, #f7f8dc, #f8fad6); ;
 }
 
-code {
+.cursor1 {
+  cursor: url('./assets/cur.png'), pointer !important;
+}
 
+.smartphone {
+  position: relative;
+  width: 80%;
+ min-height: 120vh;
+  margin: auto;
+  border: 16px #bbdefb solid;
+
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+.smartphone .content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(246, 247, 235);
 }
